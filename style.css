@@ -1,0 +1,100 @@
+
+body{
+    background-color: rgb(33, 32, 48);
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#generator-container{
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+.container{
+    background-color: rgb(10, 16, 37);
+    padding:1%;
+
+}
+.container h1{
+    color: cyan;
+    margin-bottom: 3%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(1rem,8vw,3rem);
+
+}
+.container p{
+
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-size: 1.1rem; */
+    font-size: clamp(1rem,8vw,0.8rem);
+    color: white;
+}
+.output{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-size: 1.1rem; */
+    font-size: clamp(1rem,8vw,1rem);
+    color: white; 
+    padding: 1rem;
+    height: 2rem;
+}
+
+.generator{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1% 2% 3% 2%;
+    background-color: rgb(23, 24, 51);
+}
+
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1rem 0 0 0 ;
+    color: whitesmoke;
+}
+.input-value{
+    margin: 0.3rem 0;
+    padding: 0.8rem ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: rgb(247, 237, 237);
+    font-size: clamp(1rem,8vw,0.8rem);
+}
+input::placeholder{
+    font-size: clamp(0.8rem,8vw,0.5rem);
+}
+
+.generate-button{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1.3rem 0;
+    background-color:rgb(23, 24, 51);
+}
+.generate-button button{
+    padding: 0.8rem;
+    width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1rem,8vw,0.8rem);;
+    font-weight: bold;
+    background-color: rgb(0, 123, 246);
+    border:none;
+    border-radius: 0.2rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.generate-button button:hover{
+    background-color: rgb(15, 69, 123);
+    color: white;
+}
+.generate-button button::after{
+    color: grey;
+}
